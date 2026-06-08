@@ -126,10 +126,35 @@ footer ul a{font-size:.92rem;transition:.2s}footer ul a:hover{color:var(--accent
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
 @media(max-width:900px){.hero-grid,.why-grid,.contact-grid{grid-template-columns:1fr}.services-grid,.tst-grid{grid-template-columns:1fr}.stats-grid{grid-template-columns:repeat(2,1fr)}.foot-grid{grid-template-columns:1fr 1fr}.menu{position:fixed;inset:86px 0 auto 0;background:#fff;flex-direction:column;padding:24px;gap:18px;border-bottom:1px solid var(--line);transform:translateY(-10px);opacity:0;visibility:hidden;pointer-events:none;z-index:45;transition:.25s}.menu.open{transform:translateY(0);opacity:1;visibility:visible;pointer-events:auto}.burger{display:flex}.nav-cta .btn{display:none}section{padding:64px 0}}
 @media(max-width:560px){.stats-grid,.foot-grid{grid-template-columns:1fr}.logo-name>span{font-size:1.1rem}.logo-mark{width:44px;height:44px;flex-basis:44px}}@media(max-width:768px){.logo-name{display:none}.logo-mark{width:48px;height:48px;flex-basis:48px}}</style>
+<style>
+:root{
+--accent:#D6A94A;
+--accentd:#A9781E;
+--dark:#071426;
+--darker:#020814;
+--ink:#071426;
+--gray:#536070;
+--line:#dce3ec;
+--soft:#f3f6fa;
+--shadow:0 18px 50px -20px rgba(2,8,20,.34)
+}
+header{background:rgba(255,255,255,.96)}
+.brand{gap:14px}
+.logo-mark{width:64px;height:64px;flex:0 0 64px;border-radius:10px;background:var(--darker);overflow:hidden;box-shadow:0 10px 24px -12px rgba(2,8,20,.7)}
+.logo-mark img{width:100%;height:100%;object-fit:cover;object-position:center}
+.logo-name>span{color:var(--ink)}
+.hero{background:linear-gradient(90deg,var(--darker) 0%,rgba(7,20,38,.94) 35%,rgba(7,20,38,.62) 72%,rgba(7,20,38,.34) 100%),linear-gradient(0deg,rgba(2,8,20,.68),rgba(2,8,20,0) 46%),url('assets/hero.jpg') center/cover no-repeat}
+.btn-primary,.btn-dark,.subs button{background:linear-gradient(135deg,#f0cf7a,#d6a94a 52%,#a9781e);color:var(--darker)}
+.card .ico,.tst .av{background:linear-gradient(150deg,var(--dark),var(--darker))}
+.why,.cta-banner,footer{background:var(--darker)}
+.cta-banner{background:linear-gradient(120deg,var(--dark),var(--darker))}
+@media(max-width:768px){.logo-mark{width:52px;height:52px;flex-basis:52px}.logo-name{display:flex}.logo-name>span{font-size:1rem}.logo-name>i{font-size:.52rem}}
+@media(max-width:420px){.logo-name{display:none}}
+</style>
 </head>
 <body>
 <header><div class="container nav">
-<a class="brand" href="#"><span class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 7l7-4 7 4M5 7v6a7 7 0 0014 0V7M3 13h4M17 13h4"/></svg></span><span class="logo-name"><span>Baluarte</span><i>LEGAL</i></span></a>
+<a class="brand" href="#"><span class="logo-mark"><img src="assets/logo.png" alt="Baluarte Legal"></span><span class="logo-name"><span>Baluarte</span><i>LEGAL</i></span></a>
 <ul class="menu" id="menu">
 <li><a href="#inicio">Inicio</a></li><li><a href="#servicios">Servicios</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="#contacto">Contáctanos</a></li>
 </ul>
